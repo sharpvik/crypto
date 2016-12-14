@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+	<title>Crypto</title>
+	<meta name="description" content="  " />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- NAVIGATION START -->
+    
+        <div class="wrapper">Crypto</div>
+        <div class="bottom_nav">
+            <div class="half active">ENCRYPT</div>
+            <div class="half">DECRYPT</div>
+        </div>
+    
+    <!-- NAVIGATION END -->
+    
+    <!-- ENCRYPT START -->
+    
+    <div class="encrypt_app">
+    
+        <div class="input_box">
+            <textarea id="encrypt_message" rows="5" placeholder="A message you want me to encrypt..."></textarea>
+            <button class="encrypt_button">ENCRYPT <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+            
+    </div>
+    
+    <!-- ENCRYPT START -->
+    
+    <!-- DECRYPT START -->
+    
+    <div class="decrypt_app not_active">
+    
+        <div class="input_box">
+            <input id="decryptionKey" placeholder="Decryption key">
+            <textarea id="decrypt_message" rows="4" placeholder="A message you want me to decrypt..."></textarea>
+            <button class="decrypt_button">DECRYPT <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+    
+    </div>
+    
+    <!-- DECRYPT END -->
+    
+    <!-- MESSAGE BOX START -->
+    
+    <div class="newMessage_box">
+        <div class="decryptionKey">Your encrypted message will appear here</div>
+        <div class="newMessage"></div>
+        <button class="send_button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- MESSAGE BOX END -->
+
+    <!-- SEND FORM START -->
+    
+    <div class="darkener not_active form_not_active">
+        <form id="send_form" action="#" method="post">
+            <p>Recepient's email: *</p>
+            <input type="email" name="recepient" placeholder="miller_brands@ex.com" required="required" id="in1">
+            
+            <p>Your name:</p>
+            <input type="text" name="name" placeholder="Sender Black" id="in2">
+            
+            <p>Your email:</p>
+            <input type="text" name="sendermail" placeholder="senderman@ex.com" id="in3">
+            
+            <p>Email title: *</p>
+            <input type="text" name="title" placeholder="Hello, my friend!" required="required" id="in4">
+            
+            <input type="hidden" name="newMessage" value="" id="inText">
+            
+            <div class="cancel_button"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+            <button type="submit" class="submit">SEND MESSAGE</button>
+        </form>
+    </div>
+    
+    <!-- SEND FORM END -->
+    
+    <!-- SCRIPTS SCRIPTS SCRIPTS -->
+
+    <script type="text/javascript" src="libs/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="libs/FriendlyJS/Friendly.js"></script>
+
+    <script type="text/javascript" src="uglified/script.js"></script>
+
+</body>
+</html>
